@@ -471,3 +471,54 @@ body {
     .hero-tagline { font-size: 1.8rem; }
     .main-logo-head { font-size: 4rem; }
 }
+.results-gallery{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+    margin-top:45px;
+}
+
+.result-card{
+    width:340px;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(0,0,0,.18);
+    transition:.3s;
+}
+
+.result-card:hover{
+    transform:translateY(-8px);
+}
+
+.result-card img{
+    width:100%;
+    display:block;
+}
+
+.result-content{
+    padding:20px;
+    text-align:center;
+}
+
+.result-content h3{
+    font-size:24px;
+    margin-bottom:10px;
+    color:#6d0019;
+}
+
+.percentile{
+    font-size:18px;
+    font-weight:600;
+}
+
+.percentile span{
+    color:#b8860b;
+}
+
+.achievement{
+    margin-top:10px;
+    font-weight:bold;
+    color:#008000;
+}
