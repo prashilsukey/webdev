@@ -522,3 +522,159 @@ body {
     font-weight:bold;
     color:#008000;
 }
+/* ==========================
+   EARLY BIRD PRICING SECTION
+========================== */
+
+.pricing-section{
+    padding:90px 20px;
+    background:#faf8f5;
+}
+
+.pricing-card{
+    max-width:850px;
+    margin:auto;
+    background:#fff;
+    border-radius:24px;
+    padding:50px;
+    text-align:center;
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+    border:1px solid rgba(0,0,0,.08);
+}
+
+.offer-badge{
+    display:inline-block;
+    padding:8px 18px;
+    background:#8b0000;
+    color:#fff;
+    border-radius:50px;
+    font-size:.9rem;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:22px;
+}
+
+.pricing-card h2{
+    font-size:3rem;
+    color:#8b0000;
+    margin-bottom:10px;
+    font-family:'Cinzel',serif;
+}
+
+/* Naye HTML inline-class selector (.sub-text) ke sath match kiya */
+.pricing-card h2 .sub-text{
+    display:block;
+    margin-top:12px;
+    font-size:1.1rem;
+    color:#444;
+    font-family:'Plus Jakarta Sans',sans-serif;
+    font-weight:600;
+    letter-spacing: 0;
+}
+
+.pricing-description{
+    max-width:600px;
+    margin:20px auto 40px;
+    color:#666;
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+.payment-options{
+    display:grid;
+    /* Clean desktop balance distribution */
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-bottom:35px;
+}
+
+.payment-box{
+    background:#fafafa;
+    border:1px solid #e5e5e5;
+    border-radius:18px;
+    padding:28px;
+    transition:.3s ease-in-out;
+    /* Flex grid structure lagaya taaki dono box ki buttons hamesha align rahein */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+/* Tint adjustment for installment tracking visibility */
+.box-secondary {
+    background: #fdfdfd;
+    border-color: #e0e0e0;
+}
+
+.payment-box:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
+
+.payment-box h3{
+    color:#8b0000;
+    margin-bottom:15px;
+    font-size: 1.25rem;
+}
+
+.payment-box p{
+    color:#555;
+    line-height:1.7;
+    margin-bottom: 25px;
+    flex-grow: 1; /* Chote text wale box ki button ko upar bhagne nahi dega */
+}
+
+.pricing-note{
+    font-size:1rem;
+    color:#777;
+    margin-bottom:30px;
+}
+
+/* --- Added Layout Integration for Grid Buttons --- */
+.unique-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: #8b0000;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #660000;
+}
+
+.btn-secondary {
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #151515;
+}
+
+@media(max-width:768px){
+    .pricing-card{
+        padding:35px 25px;
+    }
+
+    .pricing-card h2{
+        font-size:2.3rem;
+    }
+
+    .payment-options{
+        grid-template-columns:1fr;
+    }
+}

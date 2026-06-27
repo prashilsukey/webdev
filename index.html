@@ -245,36 +245,124 @@
     </section>
 
     <section class="application-form-section" id="application-funnel">
-        <div class="container-small">
-            <div class="form-header-area">
-                <h2>Apply for AIR Mentorship Batch</h2>
-                <p>Fill out your technical profile metrics below. Your answers help us verify your commitment level before assigning a primary rank strategist.</p>
-            </div>
+    <div class="container-small">
+        <div class="form-header-area">
+            <h2>Apply for AIR Mentorship Batch</h2>
+            <p>Fill out your technical profile metrics below. Your answers help us verify your commitment level before assigning a primary rank strategist.</p>
+        </div>
+        
+        <div class="form-progress-bar">
+            <div class="step-indicator active" id="ind-1"><span>1</span><label>Personal</label></div>
+            <div class="step-indicator" id="ind-2"><span>2</span><label>Academic</label></div>
+            <div class="step-indicator" id="ind-3"><span>3</span><label>Motivation</label></div>
+        </div>
+
+        <form id="native-application-form">
             
-            <div class="form-progress-bar">
-                <div class="step-indicator active" id="ind-1"><span>1</span><label>Personal</label></div>
-                <div class="step-indicator" id="ind-2"><span>2</span><label>Academic</label></div>
-                <div class="step-indicator" id="ind-3"><span>3</span><label>Analysis</label></div>
+            <div class="form-step-panel current" id="step-1">
+                <div class="input-block">
+                    <label for="student_name">Full Name *</label>
+                    <input type="text" id="student_name" required placeholder="Enter your full name">
+                </div>
+                <div class="input-block">
+                    <label for="student_phone">WhatsApp Number *</label>
+                    <input type="tel" id="student_phone" required placeholder="Enter active WhatsApp mobile number">
+                </div>
+                <div class="input-block">
+                    <label for="student_email">Email Address *</label>
+                    <input type="email" id="student_email" required placeholder="Enter email profile identifier">
+                </div>
+                <div class="form-nav-controls">
+                    <button type="button" class="btn-nav next-btn">Continue to Academic Data <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
             </div>
 
-            <form id="native-application-form">
-                <div class="form-step-panel current" id="step-1">
-                    <div class="input-block">
-                        <label for="student_name">Full Name *</label>
-                        <input type="text" id="student_name" required placeholder="Enter your full name">
-                    </div>
-                    <div class="input-block">
-                        <label for="student_phone">WhatsApp Number *</label>
-                        <input type="tel" id="student_phone" required placeholder="Enter active WhatsApp mobile number">
-                    </div>
-                    <div class="input-block">
-                        <label for="student_email">Email Address *</label>
-                        <input type="email" id="student_email" required placeholder="Enter email profile identifier">
-                    </div>
-                    <div class="form-nav-controls">
-                        <button type="button" class="btn-nav next-btn">Continue to Academic Data <i class="fa-solid fa-arrow-right"></i></button>
-                    </div>
+            <div class="form-step-panel" id="step-2">
+                <div class="input-block">
+                    <label for="academic_tier">Current Stage *</label>
+                    <select id="academic_tier" required>
+                        <option value="" disabled selected>Select your current status</option>
+                        <option value="Class 11">Class 11 Student</option>
+                        <option value="Class 12">Class 12 Student</option>
+                        <option value="Dropper">Dropper / Repeater</option>
+                    </select>
                 </div>
+                <div class="input-block">
+                    <label for="target_year">Target JEE Attempt Year *</label>
+                    <select id="target_year" required>
+                        <option value="" disabled selected>Select Target Year</option>
+                        <option value="2027">JEE 2027</option>
+                        <option value="2028">JEE 2028</option>
+                    </select>
+                </div>
+                <div class="input-block">
+                    <label for="current_resources">Current Study Material / Coaching</label>
+                    <input type="text" id="current_resources" placeholder="e.g., Allen Modules, FIITJEE, PW, HC Verma">
+                </div>
+                <div class="form-nav-controls">
+                    <button type="button" class="btn-nav prev-btn"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                    <button type="button" class="btn-nav next-btn">Continue to Motivation <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="form-step-panel" id="step-3">
+                <div class="input-block">
+                    <label for="motivation_statement">Why do you think you deserve this personal AIR mentoring slot? *</label>
+                    <textarea id="motivation_statement" required rows="4" placeholder="Write a brief statement about your targets and focus levels..."></textarea>
+                </div>
+                
+                <div class="form-nav-controls">
+                    <button type="button" class="btn-nav prev-btn"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                    <button type="submit" class="btn-submit main-submit-btn">Submit Application & Unlock Payment <i class="fa-solid fa-bolt"></i></button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</section>
+                <section class="pricing-section">
+    <div class="container">
+        <div class="pricing-card">
+            <div class="offer-badge">🔥 EARLY BIRD OFFER</div>
+
+            <!-- Main Title Sync -->
+            <h2>₹1999 <span class="sub-text">for the First 20 Students Only</span></h2>
+
+            <p class="pricing-description">
+                Join AIR Mentorship at a special launch price. 
+                Limited to the first <strong>20 students</strong>.
+            </p>
+
+            <div class="payment-options">
+                <!-- Option 1: Full Payment Card -->
+                <div class="payment-box">
+                    <h3>💳 One-Time Payment (1-Year Access)</h3>
+                    <p>Pay <strong>₹1999</strong> once and enjoy complete mentorship access for the next one full year.</p>
+                    
+                    <!-- Integrated Your Live 1999 Link -->
+                    <a href="https://rzp.io/rzp/airfullpaymentBdni1U9" target="_blank" class="btn btn-primary unique-btn">
+                        Pay ₹1999 Now <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Option 2: Monthly Installments Card -->
+                <div class="payment-box box-secondary">
+                    <h3>📅 Monthly Installments (Full 1-Year Access)</h3>
+                    <p>Pay just <strong>₹500/month for 5 months</strong>. Get complete batch validity for 1 full year after completing your track.</p>
+                    
+                    <!-- Integrated Your Live 500 Installment Link -->
+                    <a href="https://rzp.io/rzp/airinstallmentsJAJN0w6" target="_blank" class="btn btn-secondary unique-btn">
+                        Pay ₹500 (Month 1) <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="pricing-note">
+                Choose the payment option that suits you best securely via UPI / Card.
+            </p>
+        </div>
+    </div>
+</section>
 
                 <div class="form-step-panel" id="step-2">
                     <div class="input-block">
